@@ -124,7 +124,10 @@ function comparadorBasico(elemento1, elemento2) {
  * @return {String} String com o primeiro nome apenas.
  */
 function primeiroNome(nomeCompleto) {
-  naoFizIssoAinda();
+   const prnome = nomeCompleto.split(' ');
+   let x = prnome[0];
+   return x; 
+
 }
 
 // EXERCÍCIO 5.
