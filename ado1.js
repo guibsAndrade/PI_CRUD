@@ -434,7 +434,11 @@ function verificarTriangulo() {
  * @param {Array<Object>} jogadores Um array com os jogadores que devem receber as cartas.
  */
 function distribuirCartas(baralho, jogadores) {
-    naoFizIssoAinda();
+  for (let i = 0; i < 5; i++) {
+    for (let distr = 0; distr < jogadores.length; distr++) {
+      jogadores[distr].cartas.push(baralho.shift());
+    }
+  }
 }
 
 // EXERCÍCIO 19.
