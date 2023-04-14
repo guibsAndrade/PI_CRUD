@@ -267,8 +267,12 @@ function converteDataParaFormaCompleta(data) {
  * @param {number} fim O segundo número.
  * @return {number} O somatório de valores pares entre os dois números, contando com eles.
  */
-function somadorPares(inicio, fim) {
-  naoFizIssoAinda();
+function distribuirCartas(baralho, jogadores) {
+  for (let i = 0; i < 5; i++) {
+    for (let distr = 0; distr < jogadores.length; distr++) {
+      jogadores[distr].cartas.push(baralho.shift());
+    }
+  }
 }
 
 // EXERCÍCIO 9.
